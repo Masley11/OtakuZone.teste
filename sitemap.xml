@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Page principale -->
+  <url>
+    <loc>https://otakuzone.infinityfree.me/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Pages principales SPA -->
+  <url>
+    <loc>https://otakuzone.infinityfree.me/#/home</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://otakuzone.infinityfree.me/#/anime</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://otakuzone.infinityfree.me/#/manga</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://otakuzone.infinityfree.me/#/quiz</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://otakuzone.infinityfree.me/#/communaute</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://otakuzone.infinityfree.me/#/profil</loc>
+    <priority>0.4</priority>
+  </url>
+
+</urlset>

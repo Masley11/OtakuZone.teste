@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Titre SEO -->
+  <title>OtakuZone – Anime, Manga, Quiz & Communauté Otaku</title>
+
+  <!-- SEO de base -->
+  <meta name="description" content="OtakuZone est le hub des otaku : anime, manga, quiz interactifs, recommandations selon ton mood, XP et communauté japonaise. Rejoins OtakuZone et progresse !" />
+  <meta name="keywords" content="OtakuZone, anime, manga, quiz anime, communauté otaku, recommandations anime, culture japonaise, shonen, seinen, isekai" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Canonical (important) -->
+  <link rel="canonical" href="https://otakuzone.infinityfree.me/" />
+
+  <!-- Styles -->
+<link rel="stylesheet" href="/css/main.css?v=2.0.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<!-- Certificate Styles -->
+<link rel="stylesheet" href="/css/certificate.css?v=2.0.0">
+<!-- Fonts pour le certificat -->
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Playfair+Display:wght@700&family=Courier+Prime&family=Caveat&display=swap" rel="stylesheet">
+
+  <!-- PWA -->
+  <link rel="service-workers" href="sw.js?v=2.0.0">
+<link rel="manifest" href="manifest.json?v=2.0.0">
+  <meta name="theme-color" content="#ff4081">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- (Optionnel mais recommandé) Icônes PWA -->
+  <!-- Mets ces fichiers si tu les as : /icons/icon-192.png et /icons/icon-512.png -->
+  <link rel="apple-touch-icon" href="/icons/icon-192.png">
+
+ <!-- Favicon (Google, navigateurs) -->
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="/assets/icons/icon-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/icons/icon-192x192.png">
+
+<!-- Open Graph (WhatsApp / Facebook / Discord) -->
+<meta property="og:title" content="OtakuZone – Le hub des Otaku">
+<meta property="og:description" content="Anime, manga, quiz, XP et communauté otaku réunis sur OtakuZone.">
+<meta property="og:url" content="https://otakuzone.infinityfree.me/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://otakuzone.infinityfree.me/assets/icons/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="OtakuZone — hub anime, manga & quiz">
+
+<!-- Twitter (optionnel mais bien) -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://otakuzone.infinityfree.me/assets/icons/og-image.png">
+
+  <!-- Google Search Console (tu l’as déjà) -->
+  <meta name="google-site-verification" content="KpMLdZYWPa3nCS1VTfmrZz-dWqXs0Gp8NASiLufLfBM" />
+
+  <!-- Données structurées (Google comprend mieux OtakuZone) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "OtakuZone",
+    "url": "https://otakuzone.infinityfree.me/",
+    "description": "OtakuZone est le hub des otaku : anime, manga, quiz, XP et communauté japonaise.",
+    "inLanguage": "fr",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://otakuzone.infinityfree.me/#/anime?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <div id="app">
+    <header class="header">
+      <div class="brand">
+        <div class="brand-icon">🎌</div>
+        <div class="brand-text">OtakuZone<span id="versionBadge" class="version-badge" title="Version OtakuZone">v—</span></div>
+        
+      </div>
+
+      <div class="header-right">
+        <div class="user-actions">
+          <a href="#/profil" class="user-btn" title="Profil">
+            <i class="fas fa-user"></i>
+          </a>
+<button id="install-pwa" class="user-btn" title="Installer l'app">
+  <i class="fas fa-download"></i>
+</button>
+          
+
+  
+
+          <button id="themeBtn" class="theme-btn" title="Changer le thème">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+
+        <a href="#/login" class="login-btn" id="navLogin">
+          <i class="fas fa-sign-in-alt"></i>
+          <span>Connexion</span>
+        </a>
+      </div>
+    </header>
+    
+<nav class="nav">
+  <div class="nav-scroll">
+
+    <!-- 1. Accueil -->
+    <a href="#/home" class="nav-link">
+      <i class="fas fa-home"></i>
+      <span>Accueil</span>
+    </a>
+
+    <!-- 2. Feature phare -->
+    <a href="#/mood" class="nav-link">
+      <i class="fas fa-masks-theater"></i>
+      <span>Mood</span>
+    </a>
+
+    <!-- 3. Découverte -->
+    <a href="#/anime" class="nav-link">
+      <i class="fas fa-tv"></i>
+      <span>Anime</span>
+    </a>
+
+<a href="#/cards" class="nav-link">
+  <i class="fas fa-id-card"></i>
+  <span>Cartes</span>
+</a>
+
+
+    <!-- 4. Engagement -->
+    <a href="#/quiz" class="nav-link">
+      <i class="fas fa-brain"></i>
+      <span>Quiz</span>
+    </a>
+
+  <!-- 5. Personnel (mobile) -->
+   <a href="#/collection" class="nav-link mobile-only">
+  <i class="fas fa-heart"></i>
+  <span>Collection</span>
+</a>
+
+      <!-- 6. Statut / compétition -->
+    <a href="#/ranking" class="nav-link">
+  <i class="fas fa-trophy"></i>
+  <span>Classement</span>
+</a>
+
+    <!-- 7. Social -->
+    <a href="#/communaute" class="nav-link">
+      <i class="fas fa-users"></i>
+      <span>Communauté</span>
+    </a>
+
+    <!-- 8. Secondaire -->
+    <a href="#/manga" class="nav-link">
+      <i class="fas fa-book"></i>
+      <span>Manga</span>
+    </a>
+
+      <!-- 9. personalisation -->
+    <a href="#/profil" class="nav-link mobile-only">
+      <i class="fas fa-user"></i>
+      <span>Profil</span>
+    </a>
+
+  </div>
+</nav>
+   
+
+    <main id="view" class="view"></main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <small>© <span id="year"></span> OtakuZone - Anime, Manga & Quiz</small><div class="footer-links">
+  <a href="#/home">Accueil</a>
+  <a href="#/anime">Anime</a>
+  <a href="#/quiz">Quiz</a>
+  <a href="#/partners">Partenaires</a>
+</div>
+       
+      </div>
+    </footer>
+  </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="js/otakuid-card.js?v=3.0.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/pwa-configs.js?v=2.0.0"></script>
+<script src="js/app.js?v=2.0.0"></script>
+ <!-- Certificate System -->
+<script src="js/certificate-card.js?v=2.0.0"></script>
+<script src="js/certificate.js?v=2.0.0"></script>
+
+ <script>
+   
+  window.addEventListener("load", async () => {
+    if (
+      window.PWAConfig &&
+      typeof window.PWAConfig.registerServiceWorker === "function"
+    ) {
+      await window.PWAConfig.registerServiceWorker();
+    } else {
+      console.warn(
+        "⚠️ registerServiceWorker indisponible",
+        window.PWAConfig
+      );
+    }
+  });
+</script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3HVJ2R7G7B"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3HVJ2R7G7B');
+  </script>
+</body>
+</html>

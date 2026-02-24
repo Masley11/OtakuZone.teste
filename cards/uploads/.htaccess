@@ -1,0 +1,12 @@
+# Empêcher l'exécution de scripts PHP
+php_flag engine off
+
+# Restreindre l'accès
+Order Deny,Allow
+Deny from all
+
+# Autoriser l'affichage des images
+<FilesMatch "\.(jpg|jpeg|png|gif|webp)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
